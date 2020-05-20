@@ -12,7 +12,7 @@
     <img src="src/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <a href="https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg">Logo Source</a>
+  <a align="center" href="https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg">Logo Source</a>
 
   <h3 align="center">Untitled Duck Project</h3>
 
