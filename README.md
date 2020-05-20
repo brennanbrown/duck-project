@@ -12,8 +12,6 @@
     <img src="src/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <a align="center" href="https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg">Logo Source</a>
-
   <h3 align="center">Untitled Duck Project</h3>
 
   <p align="center">
@@ -158,6 +156,7 @@ Project Link: [https://github.com/brennanbrown/duck-project](https://github.com/
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [README Template](https://github.com/othneildrew/Best-READ.ME-Template)
+* [Logo Source](https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
