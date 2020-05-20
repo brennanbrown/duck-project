@@ -1,32 +1,32 @@
-[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Twitter][twitter-shield]][twitter-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="hhhttps://github.com/brennanbrown/duck-project">
+  <a href="https://github.com/brennanbrown/duck-project">
     <img src="src/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  [Logo Source](https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg)
+  <a href="https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg">Logo Source</a>
 
   <h3 align="center">Untitled Duck Project</h3>
 
   <p align="center">
     EvolveU and Duck Labs present a PBL Experiment!
     <br />
-    <a href="hhhttps://github.com/brennanbrown/duck-project""><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/brennanbrown/duck-project""><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="hhhttps://github.com/brennanbrown/duck-project"">View Demo</a>
+    <a href="https://github.com/brennanbrown/duck-project"">View Demo</a>
     ·
-    <a href="hhhttps://github.com/brennanbrown/duck-project/issues">Report Bug</a>
+    <a href="https://github.com/brennanbrown/duck-project/issues">Report Bug</a>
     ·
-    <a href="hhhttps://github.com/brennanbrown/duck-project/issues">Request Feature</a>
+    <a href="https://github.com/brennanbrown/duck-project/issues">Request Feature</a>
   </p>
 </p>
 
@@ -97,7 +97,7 @@ npm install npm@latest -g
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
 ```sh
-git clone hhhttps://github.com/brennanbrown/duck-project.git
+git clone https://github.com/brennanbrown/duck-project.git
 ```
 3. Install NPM packages
 ```sh
@@ -122,7 +122,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](hhhttps://github.com/brennanbrown/duck-project/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/brennanbrown/duck-project/issues) for a list of proposed features (and known issues).
 
 
 
@@ -151,7 +151,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Brennan K. Brown - [@brennankbrown](https://twitter.com/brennanbrown) - brennankbrown@pm.me
 
-Project Link: [hhhttps://github.com/brennanbrown/duck-project](hhhttps://github.com/brennanbrown/duck-project)
+Project Link: [https://github.com/brennanbrown/duck-project](https://github.com/brennanbrown/duck-project)
 
 
 
@@ -177,15 +177,15 @@ Project Link: [hhhttps://github.com/brennanbrown/duck-project](hhhttps://github.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/brennanbrown/duck-project/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/brennanbrown/duck-project?style=flat-square
 [forks-url]: https://github.com/brennanbrown/duck-project/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/brennanbrown/duck-project/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/brennanbrown/duck-project
+[stars-url]: https://img.shields.io/github/stars/brennanbrown/duck-project?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/brennanbrown/duck-project?style=flat-square
 [issues-url]: https://github.com/brennanbrown/duck-project/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/brennanbrown/duck-project?style=flat-square
 [license-url]: https://github.com/brennanbrown/duck-project/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/brennankbrown
+[twitter-shield]: https://img.shields.io/twitter/url?label=Tweet%21&style=social&url=https%3A%2F%2Ftwitter.com%2Fbrennankbrown
+[twitter-url]: https://twitter.com/brennankbrown
