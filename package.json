@@ -1,0 +1,25 @@
+{
+  "name": "duck-project",
+  "version": "1.0.0",
+  "description": "This project is a collaboration between Duck Labs and EvolveU that aims to teach students the entireity of the spectrum of full-stack web development.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brennanbrown/duck-project.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "bootstrap"
+  ],
+  "author": "Brennan K. Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brennanbrown/duck-project/issues"
+  },
+  "homepage": "https://github.com/brennanbrown/duck-project#readme"
+}

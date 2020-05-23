@@ -1,0 +1,15 @@
+[
+  {
+    "common-name": "Goat, mountain",
+    "scientific-name": "Oreamnos americanus",
+    "animal-gender": "Male"
+  }, {
+    "common-name": "Rhesus macaque",
+    "scientific-name": "Macaca mulatta",
+    "animal-gender": "Male"
+  }, {
+    "common-name": "Grey-footed squirrel",
+    "scientific-name": "Paraxerus cepapi",
+    "animal-gender": "Female"
+  }
+]
