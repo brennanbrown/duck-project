@@ -52,7 +52,7 @@
 
 ![Project Screenshot](screenshot.png "Placeholder Screenshot")
 
-This project is a collaboration between [Duck Labs](http://ducklabs.com/) and [EvolveU](https://www.evolveu.ca/) that aims to teach students the entireity of the spectrum of full-stack web development, starting with the visuals and UX of the front-end, and ending with the database and server communcation of the back-end, with the result being a complete and functional website.
+This project is a collaboration between [Duck Labs](http://ducklabs.com/) and [EvolveU](https://www.evolveu.ca/) that aims to teach students the entirety of the spectrum of full-stack web development, starting with the visuals and UX of the front-end, and ending with the database and server communcation of the back-end, with the result being a complete and functional website.
 
 Specifically, this work is meant to exemplify the pedagogy of **Project-based Learning**. PBL is an instructional methodology that encourages students to learn and apply knowledge and skills through an engaging experience. PBL presents opportunities for deeper learning in-context and for the development of important skills tied to college and career readiness.
 
@@ -72,7 +72,8 @@ In essence, the PBL model consists of these seven characteristics:
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [node.js](https://nodejs.org/en/ex)
-* [expres.js](https://expressjs.com/)
+* [express](https://expressjs.com/)
+* [EJS](https://ejs.co/)
 
 
 
@@ -157,6 +158,8 @@ Project Link: [https://github.com/brennanbrown/duck-project](https://github.com/
 ## Acknowledgements
 * [README Template](https://github.com/othneildrew/Best-READ.ME-Template)
 * [Logo Source](https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg)
+* [Prettify](https://www.npmjs.com/package/prettify)
+* [ESLint](https://eslint.org/)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
