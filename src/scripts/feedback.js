@@ -4,17 +4,17 @@ $(function feedback() {
      * @param {*} data XHR result
      */
     function updateFeedback(data) {
-      const render = [];
-      // Reset all status messages
-      $('.feedback-status').empty();
+        const render = [];
+        // Reset all status messages
+        $(".feedback-status").empty();
   
-      // All went well
-      if (!data.errors && data.feedback) {
+        // All went well
+        if (!data.errors && data.feedback) {
         // The input was valid - reset the form
-        $('.feedback-form').trigger('reset');
+            $(".feedback-form").trigger("reset");
   
-        $.each(data.feedback, function createHtml(key, item) {
-          render.push(`
+            $.each(data.feedback, function createHtml(key, item) {
+                render.push(`
           <div class="feedback-item item-list media-list">
             <div class="feedback-item media">
               <div class="feedback-info media-body">
@@ -29,46 +29,46 @@ $(function feedback() {
             </div>
           </div>
         `);
-        });
-        // Update feedback-items with what the REST API returned
-        $('.feedback-items').html(render.join('\n'));
-        // Output the success message
-        $('.feedback-status').html(`<div class="alert alert-success">${data.successMessage}</div>`);
-      } else {
+            });
+            // Update feedback-items with what the REST API returned
+            $(".feedback-items").html(render.join("\n"));
+            // Output the success message
+            $(".feedback-status").html(`<div class="alert alert-success">${data.successMessage}</div>`);
+        } else {
         // There was an error
         // Create a list of errors
-        $.each(data.errors, function createHtml(key, error) {
-          render.push(`
+            $.each(data.errors, function createHtml(key, error) {
+                render.push(`
           <li>${error.msg}</li>
         `);
-        });
-        // Set the status message
-        $('.feedback-status').html(
-          `<div class="alert alert-danger"><ul>${render.join('\n')}</ul></div>`
-        );
-      }
+            });
+            // Set the status message
+            $(".feedback-status").html(
+                `<div class="alert alert-danger"><ul>${render.join("\n")}</ul></div>`
+            );
+        }
     }
   
     /**
      * Attaches to the form and sends the data to our REST endpoint
      */
-    $('.feedback-form').submit(function submitFeedback(e) {
-      // Prevent the default submit form event
-      e.preventDefault();
+    $(".feedback-form").submit(function submitFeedback(e) {
+        // Prevent the default submit form event
+        e.preventDefault();
   
-      // XHR POST request
-      $.post(
-        '/feedback/api',
-        // Gather all data from the form and create a JSON object from it
-        {
-          name: $('#feedback-form-name').val(),
-          email: $('#feedback-form-email').val(),
-          title: $('#feedback-form-title').val(),
-          message: $('#feedback-form-message').val(),
-        },
-        // Callback to be called with the data
-        updateFeedback
-      );
+        // XHR POST request
+        $.post(
+            "/feedback/api",
+            // Gather all data from the form and create a JSON object from it
+            {
+                name: $("#feedback-form-name").val(),
+                email: $("#feedback-form-email").val(),
+                title: $("#feedback-form-title").val(),
+                message: $("#feedback-form-message").val(),
+            },
+            // Callback to be called with the data
+            updateFeedback
+        );
     });
-  });
+});
   
