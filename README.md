@@ -17,7 +17,7 @@
   <p align="center">
     EvolveU and Duck Labs present a PBL Experiment!
     <br />
-    <a href="https://github.com/brennanbrown/duck-project""><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/brennanbrown/duck-project/blob/master/README.md""><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/brennanbrown/duck-project"">View Demo</a>

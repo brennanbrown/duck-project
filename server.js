@@ -44,12 +44,15 @@ app.use(
 
 // Utilizing the EJS template
 app.set("view engine", "ejs");
-// Expects the template to be in the 'views' folder
-app.set("views", path.join("/views"));
+// Expects the template to be in the "views" folder
+app.set("views", path.join(__dirname, "./views"));
+
+app.locals.siteName = "Untitled Duck Project";
+
 
 // Before routing handlers are defined, there needs to be
-// 'app.use' and the middleware called 'express.static'
-app.use(express.static(path.join(__dirname, "/static")));
+// "app.use" and the middleware called "express.static"
+app.use(express.static(path.join(__dirname, "/src")));
 
 app.use(
     "/",
