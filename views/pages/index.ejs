@@ -1,26 +1,7 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Duck Project</title>
-    <meta name="description" content="EvolveU and Duck Labs present a PBL Experiment!">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="https://brennanbrown.github.io/duck-project">
-    <link rel="alternate" type="application/rss+xml" title="Untitled Duck Project" href="/feed.xml">
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&family=Work+Sans:wght@500&display=swap" rel="stylesheet"> 
-</head>
+<%- include('./partials/head') %>
 <body>
-<header class="full-width center">
-    <!-- HEADER -->
-    <h1 class="site-title"><a class="site-title-a" href="https://brennanbrown.github.io/duck-project"><%= pageTitle %></a></h1>
-    <!-- NAVIGATION -->
-    <nav>
-        <p class="site-nav"><a href="/about">About</a> / <a href="/author">Author</a> / <a href="/feed.xml">RSS</a> / <a href="http://wandernotebook.com">Blog</a> / <a href="/license">License </a> </p>
-    </nav>
 
-    <p class=quote><q><em>Be like a duck, paddling and working very hard inside the water, but what everyone sees is a smiling and calm face.</q> ― Manoj Arora</p></em>
-</header>
+<%- include('./partials/header') %>
 
 <div class="spacer-4">&nbsp;</div>
 
@@ -43,6 +24,8 @@
         <li>Banjo messenger bag sint vaporware.</li>
     </ul>
 
+    <%- include('./partials/disqus') %>
+
 </main>
 
 <div class="spacer-2">&nbsp;</div>
@@ -64,12 +47,6 @@
 
 <div class="spacer-2">&nbsp;</div>
 
-<!-- FOOTER -->
-<footer class="full-width copyright center">
-    <p>&copy; 2020 <a href="https://brennanbrown.github.io/duck-project"><strong>Untitled Duck Project</strong></a> ― Powered by Quacks! 
-    <br> Created with ❤️ by Brennan K. Brown /
-    Duck Vectors by <a href="https://www.vecteezy.com/free-vector/animal">Vecteezy</a></p>
-</footer>
-
+<%- include('./partials/footer') %>
 
 </body>
