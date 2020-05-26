@@ -52,11 +52,10 @@ app.locals.siteName = "Untitled Duck Project";
 
 // Before routing handlers are defined, there needs to be
 // "app.use" and the middleware called "express.static"
-app.use(express.static(path.join(__dirname, "/src")));
+app.use(express.static(path.join(__dirname, "./src")));
 
 app.use(
     "/",
-
     // Will pass down the service instances to the routes. 
     routes({
         animalService: animalService,

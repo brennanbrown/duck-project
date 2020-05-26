@@ -19,7 +19,7 @@ module.exports = params => {
         request.session.visitcount += 1;
         console.log(`Number of visits: ${request.session.visitcount}`);
 
-        response.render("pages/index", { pageTitle: "Welcome!"});
+        response.render("pages/index", { pageTitle: "Home of the Ducks! 🦆"});
     });
 
     router.use("/speakers", speakersRoute(params));
