@@ -1,3 +1,7 @@
+/**
+ * Required External Modules
+ */
+
 const express = require("express");
 const path = require("path");
 const cookieSession = require("cookie-session");
@@ -12,9 +16,12 @@ const userService = new UserService("/data/users.json");
 
 const routes = require("./routes");
 
-const app = express();
+/**
+ * App Variables
+ */
 
-const port = 3000;
+const app = express();
+const port = process.env.PORT || "3000";
 
 // Required if running through reverse proxy like NGINX
 app.set("trust proxy", 1);
@@ -29,6 +36,11 @@ app.use(
         keys: ["F56FsQQwE3r5", "htryhfgDSFG4"],
     })
 );
+
+
+/**
+ * Routes Definitions
+ */
 
 // Utilizing the EJS template
 app.set("view engine", "ejs");
@@ -48,6 +60,10 @@ app.use(
         speakersService: userService
     })
 );
+
+/**
+ * Server Activation
+ */
 
 app.listen(port, () => {
     console.log(`Express Sever is Listening on port ${port}!`);

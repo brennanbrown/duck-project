@@ -80,33 +80,65 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
 
 ### Prerequisites
+- #### Node installation on Windows
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-### Installation
+- #### Node installation on Ubuntu
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/brennanbrown/duck-project.git
-```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+  You can install nodejs and npm easily with apt install, just run the following commands.
 
+      $ sudo apt install nodejs
+      $ sudo apt install npm
+
+- #### Other Operating Systems
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+
+If the installation was successful, you should be able to run the following command.
+
+    $ node --version
+    v8.11.3
+
+    $ npm --version
+    6.1.0
+
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+
+    $ npm install npm -g
+
+###
+### Yarn installation
+  After installing node, this project will need yarn too, so just run the following command.
+
+      $ npm install -g yarn
+
+---
+
+## Installation
+
+    $ git clone https://github.com/brennanbrown/duck-project.git
+    $ cd duck-project
+    $ yarn install
+
+## Configure app
+
+Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
+
+- A setting;
+- Another setting;
+- One more setting;
+
+## Running the project
+
+    $ yarn start
+
+## Simple build for production
+
+    $ yarn build
 
 
 <!-- USAGE EXAMPLES -->
@@ -160,6 +192,7 @@ Project Link: [https://github.com/brennanbrown/duck-project](https://github.com/
 * [Logo Source](https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg)
 * [Prettify](https://www.npmjs.com/package/prettify)
 * [ESLint](https://eslint.org/)
+* [auto0 .gitignore](https://gist.github.com/dan-auth0/2fb996dc8080eaae0900100bf1c3fa26)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
