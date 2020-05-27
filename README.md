@@ -50,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Project Screenshot](screenshot.png "Placeholder Screenshot")
+![Project Screenshot](/src/screenshot.png "Placeholder Screenshot")
 
 This project is a collaboration between [Duck Labs](http://ducklabs.com/) and [EvolveU](https://www.evolveu.ca/) that aims to teach students the entirety of the spectrum of full-stack web development, starting with the visuals and UX of the front-end, and ending with the database and server communcation of the back-end, with the result being a complete and functional website.
 
@@ -110,19 +110,13 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     $ npm install npm -g
 
-###
-### Yarn installation
-  After installing node, this project will need yarn too, so just run the following command.
-
-      $ npm install -g yarn
-
 ---
 
 ## Installation
 
     $ git clone https://github.com/brennanbrown/duck-project.git
     $ cd duck-project
-    $ yarn install
+    $ npm i
 
 ## Configure app
 
@@ -134,12 +128,7 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 
 ## Running the project
 
-    $ yarn start
-
-## Simple build for production
-
-    $ yarn build
-
+    $ npm start
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -193,6 +182,7 @@ Project Link: [https://github.com/brennanbrown/duck-project](https://github.com/
 * [Prettify](https://www.npmjs.com/package/prettify)
 * [ESLint](https://eslint.org/)
 * [auto0 .gitignore](https://gist.github.com/dan-auth0/2fb996dc8080eaae0900100bf1c3fa26)
+* [Favicon.io](https://favicon.io/)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
