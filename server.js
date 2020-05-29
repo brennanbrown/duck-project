@@ -5,6 +5,7 @@
 const express = require("express");
 const path = require("path");
 const cookieSession = require("cookie-session");
+const createError = require("http-errors");
 
 // Adding business logic to the server.
 const AnimalService = require("./services/AnimalService");
@@ -62,6 +63,37 @@ app.use(
         speakersService: userService
     })
 );
+
+/**
+ * Error Handling
+ */
+
+
+app.use(async (request, response, next) => {
+    try {
+        const names = await speakersService.getNames();
+        response.locals.speakerNames = names;
+        return next();
+    } catch (err) {
+        return next(err);
+    }
+});
+
+app.use((request, response, next) => {
+    return next(createError(404, "File not found"));
+});
+  
+app.use((err, request, response, next) => {
+    response.locals.message = err.message;
+    // Will log the error information and trace stack
+    // to the developer, but not the user.
+    console.error(err);
+    const status = err.status || 500;
+    response.locals.status = status;
+    response.status(status);
+    response.render("error");
+});
+  
 
 /**
  * Server Activation

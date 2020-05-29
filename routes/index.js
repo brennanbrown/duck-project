@@ -8,7 +8,7 @@ const router = express.Router();
 // This method allows arguments to be passed 
 // from the application down to the route as function parameters. 
 module.exports = params => {
-    router.get("/", (request, response) => {
+    router.get("/", (request, response, next) => {
 
         // Using cookies to track the amount of visitors,
         // specific to a given user.
@@ -19,7 +19,11 @@ module.exports = params => {
         request.session.visitcount += 1;
         console.log(`Number of visits: ${request.session.visitcount}`);
 
-        response.render("pages/index", { pageTitle: "Home of the Ducks! 🦆"});
+        try {
+            response.render("pages/index", { pageTitle: "Home of the Ducks! 🦆"});
+        } catch (err){
+            return next(err);
+        }    
     });
 
     router.use("/speakers", speakersRoute(params));

@@ -31,8 +31,9 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
+    "cookie-session": "^1.4.0",
     "express": "^4.17.1",
-    "cookie-session": "^1.4.0"
+    "http-errors": "^1.7.3"
   },
   "bugs": {
     "url": "https://github.com/brennanbrown/duck-project/issues"
