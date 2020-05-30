@@ -71,8 +71,8 @@ app.use(
 
 app.use(async (request, response, next) => {
     try {
-        const names = await speakersService.getNames();
-        response.locals.speakerNames = names;
+        // const names = await speakersService.getNames();
+        // response.locals.speakerNames = names;
         return next();
     } catch (err) {
         return next(err);
