@@ -7,18 +7,21 @@ const path = require("path");
 const cookieSession = require("cookie-session");
 const createError = require("http-errors");
 
+const bodyParser = require("body-parser");
+
 // Adding business logic to the server.
 const AnimalService = require("./services/AnimalService");
-const UserService = require("./services/UserService");
+const FeedbackService = require("./services/FeedbackService");
 
 // Create instances of the above classes.
 const animalService = new AnimalService("/data/animal.json");
-const userService = new UserService("/data/users.json");
+const feedbackService = new FeedbackService("./data/feedback.json");
 
 const routes = require("./routes");
 
+
 /**
- * App Variables
+ * App Variables 
  */
 
 const app = express();
@@ -26,6 +29,11 @@ const port = process.env.PORT || "3000";
 
 // Required if running through reverse proxy like NGINX
 app.set("trust proxy", 1);
+
+
+/**
+ * Middleware
+ */
 
 // Request the lifecycle, to fetch cookies that are sent with
 // the headers that come from the client and parse them 
@@ -37,6 +45,8 @@ app.use(
         keys: ["F56FsQQwE3r5", "htryhfgDSFG4"],
     })
 );
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 
 /**
@@ -59,10 +69,10 @@ app.use(
     "/",
     // Will pass down the service instances to the routes. 
     routes({
-        animalService: animalService,
-        speakersService: userService
+        feedbackService: feedbackService
     })
 );
+
 
 /**
  * Error Handling
@@ -93,7 +103,7 @@ app.use((err, request, response, next) => {
     response.status(status);
     response.render("error");
 });
-  
+
 
 /**
  * Server Activation
