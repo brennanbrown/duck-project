@@ -98,14 +98,13 @@ class ProjectService {
    */
     async getList() {
         const data = await this.getData();
-        console.log(data);
         return data.map(project => {
-            console.log(data);
             return {
                 name: project.name,
                 topic: project.topic,
                 date: project.date,
-                description: project.description
+                description: project.description,
+                hyperlink: project.hyperlink
             };
         });
     }
@@ -115,6 +114,7 @@ class ProjectService {
    */
     async getData() {
         const data = await readFile(this.datafile, "utf8");
+        // if (!data) return [];
         return JSON.parse(data).project;
     }
 }
