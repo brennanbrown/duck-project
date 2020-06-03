@@ -1,90 +1,90 @@
 {
-    "Projects": [
+    "Project": [
         {
-            "project-name": "Augustin Soundtracks",
-            "generic-name": "Music",
+            "name": "Augustin Soundtracks",
+            "topic": "Music",
             "date": "September 2016",
-            "description": "Soundtracks and arrangements that I have composed for a number of projects over the years. Generally aimed as a hobby to help me better understand the fundamentals of music theory and composition. Most recently, the soundtrack to the unfinished visual novel series, Featherbent, which can be viewed here: https://featherbent.com/oldgames",
+            "description": "Soundtracks and arrangements that I have composed for a number of project over the years. Generally aimed as a hobby to help me better understand the fundamentals of music theory and composition. Most recently, the soundtrack to the unfinished visual novel series, Featherbent, which can be viewed here: https://featherbent.com/oldgames",
             "hyperlink": "https://augustin.bandcamp.com/",
-            "images": [ 
+            "artwork": [ 
                 "test1.jpg",
                 "test2.jpg"
             ]
         },
         {
-            "project-name": "Project QVL",
-            "generic-name": "Photography",
+            "name": "Project QVL",
+            "topic": "Photography",
             "date": "June 2010",
             "description": "A series of suburban photography that was done in the summer of 2010, with themes of nature and dream-like relaxation, using an old Kodak DX6490 with a CCD sensor to get those nostalgic colour tones.",
             "hyperlink": "https://www.deviantart.com/qvl/gallery",
-            "images": [ 
+            "artwork": [ 
                 "test1.jpg",
                 "test2.jpg"
             ]
         },
         {
-            "project-name": "Culinary Work",
-            "generic-name": "Food",
+            "name": "Culinary Work",
+            "topic": "Food",
             "date": "August 2015",
             "description": "A few samples of the meals that I cooked and baked during my time as a Sous Chef at the Rotary Flames House.",
             "hyperlink": "",
-            "images": [ 
+            "artwork": [ 
                 "test1.jpg",
                 "test2.jpg"
             ]
         },
         {
-            "project-name": "Warsaw Mountain",
-            "generic-name": "Poetry",
+            "name": "Warsaw Mountain",
+            "topic": "Poetry",
             "date": "January 2020",
             "description": "A minimalist website display my poetry. I currently have two self-published collection of chapbooks and this is the start of working on my third by publishing one new piece per week.",
             "hyperlink": "https://warsawmountain.com/",
-            "images": [ 
+            "artwork": [ 
                 "test1.jpg",
                 "test2.jpg"
             ]
         },
         {
-            "project-name": "Notebook Casa",
-            "generic-name": "Writing",
+            "name": "Notebook Casa",
+            "topic": "Writing",
             "date": "December 2015",
             "description": "A personal collection of essays I've written. A personal journey of lifelong learning, sharing resources, creating things, and trying to be better.",
             "hyperlink": "https://notebook.casa",
-            "images": [ 
+            "artwork": [ 
                 "test1.jpg",
                 "test2.jpg"
             ]
         },
         {
-            "project-name": "Journal Bar",
-            "generic-name": "Blogging",
+            "name": "Journal Bar",
+            "topic": "Blogging",
             "date": "January 2020",
             "description": "This project is indended for me to provide weekly updates regarding my goals (systems) that I currently have on a website called Beeminder. Powered by Jekyll! I’ve decided to begin this meta-accountability experiement, where I’ll report my progress with my goals on this website weekly. I hope that this extra push of consistent reporting will help me succeed with my goals and stick to good habits.",
             "hyperlink": "https://journal.bar/",
-            "images": [ 
+            "artwork": [ 
                 "test1.jpg",
                 "test2.jpg"
             ]
         },
         {
-            "project-name": "Pale Site",
-            "generic-name": "Web Development",
+            "name": "Pale Site",
+            "topic": "Web Development",
             "date": "October 2017",
             "description": "An experimental website that takes heavy inspiration from the vaporwave movement, as well as translating the MACOS UI design into a website, with an API that pulls various artistic images (with sources) to ",
             "hyperlink": "https://pale.pw/",
-            "images": [ 
+            "artwork": [ 
                 "test1.jpg",
                 "test2.jpg"
             ]
         },
         {
-            "project-name": "",
-            "generic-name": "",
+            "name": "",
+            "topic": "",
             "date": "",
             
             "description": "",
             "hyperlink": "",
-            "images": [ 
+            "artwork": [ 
                 "test1.jpg",
                 "test2.jpg"
             ]

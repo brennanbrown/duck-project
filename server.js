@@ -10,11 +10,11 @@ const createError = require("http-errors");
 const bodyParser = require("body-parser");
 
 // Adding business logic to the server.
-const AnimalService = require("./services/AnimalService");
+const ProjectService = require("./services/ProjectService");
 const FeedbackService = require("./services/FeedbackService");
 
 // Create instances of the above classes.
-const animalService = new AnimalService("/data/animal.json");
+const projectService = new ProjectService("./data/project.json");
 const feedbackService = new FeedbackService("./data/feedback.json");
 
 const routes = require("./routes");
@@ -69,7 +69,8 @@ app.use(
     "/",
     // Will pass down the service instances to the routes. 
     routes({
-        feedbackService: feedbackService
+        feedbackService: feedbackService,
+        projectService: projectService
     })
 );
 
@@ -78,11 +79,10 @@ app.use(
  * Error Handling
  */
 
-
 app.use(async (request, response, next) => {
     try {
-        // const names = await speakersService.getNames();
-        // response.locals.speakerNames = names;
+        const names = await projectService.getNames();
+        response.locals.projectNames = names;
         return next();
     } catch (err) {
         return next(err);
