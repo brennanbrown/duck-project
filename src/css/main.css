@@ -6,20 +6,14 @@
         box-sizing: border-box;
     }
 
-    nav {
-        text-align: center;
-    }
-
     .full-width {
-        /* width: 100%;
-        float: left; */
         background-color: #333;
         color: #fff;
         padding-bottom: 10px;
     }
     
 
-    .main {
+    /* .main {
         width: 69%;
         float: left;
     }
@@ -42,7 +36,7 @@
     .spacer-2 {
         width: 2%;
         float: left;
-    }  
+    }   */
 
     .full-width a {
         color: #eee;
@@ -111,8 +105,12 @@ img {
     margin-right: auto;
 }
 
-.center, h2 {
+.center {
     text-align: center;
+}
+
+.docs {
+    text-align: left;
 }
 
 p, ul, ol, li{

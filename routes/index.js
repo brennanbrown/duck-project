@@ -2,6 +2,8 @@ const express = require("express");
 
 const projectRoute = require("./project");
 const feedbackRoute = require("./feedback");
+const docsRoute = require("./docs");
+
 
 const router = express.Router();
 
@@ -36,6 +38,7 @@ module.exports = params => {
 
     router.use("/project", projectRoute(params));
     router.use("/feedback", feedbackRoute(params));
+    router.use("/docs", docsRoute(params));
 
     return router;
 };
