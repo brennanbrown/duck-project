@@ -42,7 +42,7 @@ module.exports = params => {
             request.session.feedback = {};
 
             return response.render("layout", {
-                pageTitle: "Feedback",
+                pageTitle: "Duck Portfolio - Feedback Page",
                 template: "feedback",
                 feedback,
                 errors,

@@ -10,7 +10,7 @@ module.exports = params => {
             const project = await projectService.getList();
             const artwork = await projectService.getAllArtwork();
             return response.render("layout", {
-                pageTitle: "Project",
+                pageTitle: "Duck Portfolio - My Projects",
                 template: "project",
                 project,
                 artwork,
