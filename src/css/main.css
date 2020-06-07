@@ -61,6 +61,10 @@ nav {
     text-align: left;
 }
 
+.project a{
+    text-decoration: none;
+}
+
 p, ul, ol, li{
     font-family: 'Vollkorn', serif;
 }

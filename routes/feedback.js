@@ -8,7 +8,7 @@ const router = express.Router();
 const validations = [
     check("name")
         .trim()
-        .isLength({ min: 3 })
+        .isLength({ min: 2 })
         .escape()
         .withMessage("A name is required"),
     check("email")

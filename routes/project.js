@@ -8,12 +8,10 @@ module.exports = params => {
     router.get("/", async (request, response, next) => {
         try {
             const project = await projectService.getList();
-            const artwork = await projectService.getAllArtwork();
             return response.render("layout", {
                 pageTitle: "Duck Portfolio - My Projects",
                 template: "project",
-                project,
-                artwork,
+                project
             });
         } catch (err) {
             return next(err);

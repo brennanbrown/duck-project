@@ -38,7 +38,6 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -54,7 +53,7 @@
 
 This project is a collaboration between [Duck Labs](http://ducklabs.com/) and [EvolveU](https://www.evolveu.ca/) that aims to teach students the entirety of the spectrum of full-stack web development, starting with the visuals and UX of the front-end, and ending with the database and server communcation of the back-end, with the result being a complete and functional website.
 
-Specifically, this work is meant to exemplify the pedagogy of **Project-based Learning**. PBL is an instructional methodology that encourages students to learn and apply knowledge and skills through an engaging experience. PBL presents opportunities for deeper learning in-context and for the development of important skills tied to college and career readiness.
+Specifically, this work is meant to exemplify the pedagogy of **Project-based Learning**. PBL is an instructional methodology that encourages students to learn and apply knowledge and skills through an engaging experience. PBL presents opportunities for deeper learning in-context and for the development of important skills tied to career readiness.
 
 **Why Project-based Learning?**
 
@@ -70,7 +69,7 @@ In essence, the PBL model consists of these seven characteristics:
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
+* [Bootstrap 4](https://getbootstrap.com)
 * [node.js](https://nodejs.org/en/ex)
 * [express](https://expressjs.com/)
 * [EJS](https://ejs.co/)
@@ -80,7 +79,7 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js and NPM installed in your environement.
 
 ### Prerequisites
 - #### Node installation on Windows
@@ -118,26 +117,11 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ cd duck-project
     $ npm i
 
-## Configure app
-
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
-
-- A setting;
-- Another setting;
-- One more setting;
-
-## Running the project
+### Running the project
 
     $ npm start
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+Once the server has started up, you can visit it at [localhost:3000/](localhost:3000/), or [127.0.0.1:3000/](127.0.0.1:3000/).
 
 <!-- ROADMAP -->
 ## Roadmap

@@ -23,13 +23,11 @@ module.exports = params => {
         console.log(`Number of visits: ${request.session.visitcount}`);
 
         try {
-            const artwork = await projectService.getAllArtwork();
             const getList = await projectService.getList();
             return response.render("layout", {
                 pageTitle: "Duck Portfolio - Home 🦆",
                 template: "index",
-                getList,
-                artwork,
+                getList
             });
         } catch (err) {
             return next(err);

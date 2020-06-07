@@ -31,24 +31,6 @@ class ProjectService {
     }
 
     /**
-   * Get all artwork
-   */
-    async getAllArtwork() {
-        const data = await this.getData();
-
-        // Array.reduce() is used to traverse all project and
-        // create an array that contains all artwork
-        const artwork = data.reduce((acc, elm) => {
-            if (elm.artwork) {
-                // eslint-disable-next-line no-param-reassign
-                acc = [...acc, ...elm.artwork];
-            }
-            return acc;
-        }, []);
-        return artwork;
-    }
-
-    /**
    * Get all artwork of a given project
    * @param {*} topic The project short name
    */
@@ -103,8 +85,10 @@ class ProjectService {
                 name: project.name,
                 topic: project.topic,
                 date: project.date,
+                end: project.end,
                 description: project.description,
-                hyperlink: project.hyperlink
+                hyperlink: project.hyperlink,
+                artwork: project.artwork
             };
         });
     }
