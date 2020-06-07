@@ -39,6 +39,7 @@
     "express": "^4.17.1",
     "express-csp-header": "^4.0.0",
     "express-validator": "^6.5.0",
+    "helmet-csp": "^2.10.0",
     "http-errors": "^1.7.3"
   },
   "bugs": {

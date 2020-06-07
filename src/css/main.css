@@ -19,6 +19,7 @@
 
 a {
     color: #002;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -28,7 +29,7 @@ a:hover {
 /* MAIN CSS */
 
 body {
-    /* background-image: url("/img/bg.png")!important; */
+    background-image: url("/img/bg.png")!important;
     font-size: 120%;
 }
 
@@ -68,6 +69,28 @@ h1, h2, h3, h4, .site-nav {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.site-title {
+.site-title-a {
     font-size: 4rem;
+    text-decoration: none;
+}
+
+/* Credit: https://css-tricks.com/examples/hrs/ */
+
+.separator {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+.separator:after{
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }

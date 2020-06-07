@@ -7,7 +7,6 @@ const path = require("path");
 const cookieSession = require("cookie-session");
 const createError = require("http-errors");
 const bodyParser = require("body-parser");
-const csp = require("express-csp-header");
 
 // Adding business logic to the server.
 const ProjectService = require("./services/ProjectService");
@@ -109,10 +108,11 @@ app.use((err, request, response, next) => {
  * Content Security Policy
  */
 
+const csp = require("helmet-csp");
 app.use(csp({
-    policies: {
-        "default-src": [csp.NONE],
-        "img-src": [csp.SELF],
+    directives: {
+        defaultSrc: ["'self'"],
+        styleSrc: ["'self'", "maxcdn.bootstrapcdn.com", "fonts.googleapis.com"]
     }
 }));
 
