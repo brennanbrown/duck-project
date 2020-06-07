@@ -6,8 +6,8 @@ const express = require("express");
 const path = require("path");
 const cookieSession = require("cookie-session");
 const createError = require("http-errors");
-
 const bodyParser = require("body-parser");
+const csp = require("express-csp-header");
 
 // Adding business logic to the server.
 const ProjectService = require("./services/ProjectService");
@@ -104,6 +104,20 @@ app.use((err, request, response, next) => {
     response.render("error");
 });
 
+
+/**
+ * Content Security Policy
+ */
+
+app.use(csp({
+    policies: {
+        "default-src": [csp.NONE],
+        "img-src": [csp.SELF],
+    }
+}));
+
+// HTTP response header will be defined as:
+// "Content-Security-Policy: default-src 'none'; img-src 'self';"
 
 /**
  * Server Activation
