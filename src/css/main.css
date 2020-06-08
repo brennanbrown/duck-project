@@ -10,11 +10,17 @@
 }
 
 .full-width a {
-    color: #eee;
+    color: #fff;
 }
 
 .full-width a:visited {
-    color: #eee;
+    color: #fff;
+}
+
+.full-width a:hover{
+    color: #ccc;
+    text-decoration: none;
+    background-color: none;
 }
 
 a {
@@ -23,8 +29,10 @@ a {
 }
 
 a:hover {
-    color: #aaa;
+    color: #666;
 }
+
+
 
 /* MAIN CSS */
 
@@ -45,7 +53,10 @@ header{
     display: inline-block;
     height: 130%;
     background-image: url("/img/header.jpg")!important;
-    background-size: 100%;
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
     font-size: 120%;
 }
 
@@ -63,6 +74,10 @@ nav {
 
 .project a{
     text-decoration: none;
+}
+
+.newsletter {
+    margin-bottom: -25px;
 }
 
 p, ul, ol, li{

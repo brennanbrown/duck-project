@@ -7,6 +7,7 @@ const path = require("path");
 const cookieSession = require("cookie-session");
 const createError = require("http-errors");
 const bodyParser = require("body-parser");
+const csp = require("helmet-csp");
 
 // Adding business logic to the server.
 const ProjectService = require("./services/ProjectService");
@@ -80,8 +81,6 @@ app.use(
 
 app.use(async (request, response, next) => {
     try {
-        const names = await projectService.getNames();
-        response.locals.projectNames = names;
         return next();
     } catch (err) {
         return next(err);
@@ -89,9 +88,13 @@ app.use(async (request, response, next) => {
 });
 
 app.use((request, response, next) => {
-    return next(createError(404, "File not found"));
+    try {
+        return next();
+    } catch (err) {
+        return next(createError(404, "File not found"));
+    }
 });
-  
+
 app.use((err, request, response, next) => {
     response.locals.message = err.message;
     // Will log the error information and trace stack
@@ -108,16 +111,12 @@ app.use((err, request, response, next) => {
  * Content Security Policy
  */
 
-const csp = require("helmet-csp");
 app.use(csp({
     directives: {
         defaultSrc: ["'self'"],
         styleSrc: ["'self'", "maxcdn.bootstrapcdn.com", "fonts.googleapis.com"]
     }
 }));
-
-// HTTP response header will be defined as:
-// "Content-Security-Policy: default-src 'none'; img-src 'self';"
 
 /**
  * Server Activation
