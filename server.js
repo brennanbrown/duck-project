@@ -123,5 +123,5 @@ app.use(csp({
  */
 
 app.listen(port, () => {
-    console.log(`Express Sever is Listening on port ${port}!`);
+    console.log(`Express Server is Listening on port ${port}!`);
 });

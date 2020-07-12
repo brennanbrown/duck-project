@@ -3,14 +3,20 @@
   <div class="row">
     <% project.forEach(function (project) {%>
     <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+
       <div class="card h-100">
         <img h-100 src="<%=project.artwork%>" class="card-img-top h-100" alt="...">
+
         <div class="card-body">
           <h4 class="card-title"><%=project.name%></h4>
-          <h6 class="card-subtitle mb-2 text-muted"><%=project.topic%> <br><%=project.date%> - <%=project.end%></h6>
+          <h6 class="card-subtitle mb-2 text-muted"><%=project.topic%> 
+            <br><%=project.date%> - <%=project.end%></h6>
+
           <p class="card-text"><%=project.description%></p>
+
           <div clas="card-footer text-center">
             <a href="<%=project.hyperlink%>" class="text-center d-flex justify-content-center btn btn-primary">Visit <%=project.name%></a>
+            
           </div>
         </div>
       </div>
