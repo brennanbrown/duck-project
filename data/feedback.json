@@ -1,26 +1,26 @@
 [
     {
-        "name":"Mark",
-        "email":"mark@fakemail.com",
-        "title":"Looks Great!",
-        "message":"Good job creating this little site in the past few weeks, dude."
+        "name": "Mark",
+        "email": "mark@fakemail.com",
+        "title": "Looks Great!",
+        "message": "Good job creating this little site in the past few weeks, dude."
     },
     {
-        "name":"Bob",
-        "email":"bobsmith5@fakemail.com",
-        "title":"Could Be Better, I think...",
-        "message":"I've noticed a few glitches around the site, but I understand there was a time crunch!"
+        "name": "Bob",
+        "email": "bobsmith5@fakemail.com",
+        "title": "Could Be Better, I think...",
+        "message": "I've noticed a few glitches around the site, but I understand there was a time crunch!"
     },
     {
-        "name":"Frank",
-        "email":"frank-roberts@fakemail.com",
-        "title":"Business Opportunity",
-        "message":"The guys at my consulting agency are really interesting in getting in contact with you, please keep in touch. You have my e-mail."
+        "name": "Frank",
+        "email": "frank-roberts@fakemail.com",
+        "title": "Business Opportunity",
+        "message": "The guys at my consulting agency are really interesting in getting in contact with you, please keep in touch. You have my e-mail."
     },
     {
-        "name":"Jane",
-        "email":"jane-miller@fakemail.com",
-        "title":"Critique: More Memes",
-        "message":"Very professional, but kind of boring honestly. Have a little fun! Have you considered Chuck Norris memes? Funniest stuff I've ever seen."
+        "name": "Jane",
+        "email": "jane-miller@fakemail.com",
+        "title": "Critique: More Memes",
+        "message": "Very professional, but kind of boring honestly. Have a little fun! Have you considered Chuck Norris memes? Funniest stuff I've ever seen."
     }
 ]

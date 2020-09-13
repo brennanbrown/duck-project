@@ -11,11 +11,13 @@ const router = express.Router();
 // from the application down to the route as function parameters. 
 module.exports = params => {
     router.get("/", async (request, response, next) => {
-        const { projectService } = params;
+        const {
+            projectService
+        } = params;
 
         // Using cookies to track the amount of visitors,
         // specific to a given user.
-        if(!request.session.visitcount) {
+        if (!request.session.visitcount) {
             request.session.visitcount = 0;
         }
 

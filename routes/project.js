@@ -3,7 +3,9 @@ const express = require("express");
 const router = express.Router();
 
 module.exports = params => {
-    const { projectService } = params;
+    const {
+        projectService
+    } = params;
 
     router.get("/", async (request, response, next) => {
         try {

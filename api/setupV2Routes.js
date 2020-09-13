@@ -43,4 +43,3 @@ const setupV2Routes = (apiRouter) => {
 };
 
 module.exports = setupV2Routes;
-

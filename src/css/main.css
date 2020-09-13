@@ -1,5 +1,6 @@
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -17,7 +18,7 @@
     color: #fff;
 }
 
-.full-width a:hover{
+.full-width a:hover {
     color: #ccc;
     text-decoration: none;
     background-color: none;
@@ -37,22 +38,22 @@ a:hover {
 /* MAIN CSS */
 
 body {
-    background-image: url("/img/bg.png")!important;
+    background-image: url("/img/bg.png") !important;
     font-size: 120%;
 }
 
 img {
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-header{
+header {
     display: inline-block;
     height: 130%;
-    background-image: url("/img/header.jpg")!important;
+    background-image: url("/img/header.jpg") !important;
     background-position: center center;
     background-repeat: none;
     background-attachment: fixed;
@@ -72,7 +73,7 @@ nav {
     text-align: left;
 }
 
-.project a{
+.project a {
     text-decoration: none;
 }
 
@@ -80,11 +81,18 @@ nav {
     margin-bottom: -25px;
 }
 
-p, ul, ol, li{
+p,
+ul,
+ol,
+li {
     font-family: 'Vollkorn', serif;
 }
 
-h1, h2, h3, h4, .site-nav {
+h1,
+h2,
+h3,
+h4,
+.site-nav {
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -96,7 +104,8 @@ h1, h2, h3, h4, .site-nav {
 /* Credit: https://css-tricks.com/examples/hrs/ */
 
 .separator {
-    overflow: visible; /* For IE */
+    overflow: visible;
+    /* For IE */
     padding: 0;
     border: none;
     border-top: medium double #333;
@@ -104,7 +113,7 @@ h1, h2, h3, h4, .site-nav {
     text-align: center;
 }
 
-.separator:after{
+.separator:after {
     content: "§";
     display: inline-block;
     position: relative;

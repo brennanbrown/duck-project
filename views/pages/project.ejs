@@ -1,4 +1,3 @@
-
 <div class="container project">
   <div class="row">
     <% project.forEach(function (project) {%>
@@ -9,14 +8,15 @@
 
         <div class="card-body">
           <h4 class="card-title"><%=project.name%></h4>
-          <h6 class="card-subtitle mb-2 text-muted"><%=project.topic%> 
+          <h6 class="card-subtitle mb-2 text-muted"><%=project.topic%>
             <br><%=project.date%> - <%=project.end%></h6>
 
           <p class="card-text"><%=project.description%></p>
 
           <div clas="card-footer text-center">
-            <a href="<%=project.hyperlink%>" class="text-center d-flex justify-content-center btn btn-primary">Visit <%=project.name%></a>
-            
+            <a href="<%=project.hyperlink%>" class="text-center d-flex justify-content-center btn btn-primary">Visit
+              <%=project.name%></a>
+
           </div>
         </div>
       </div>
@@ -24,4 +24,3 @@
     <%})%>
   </div>
 </div>
-

@@ -11,29 +11,32 @@ const readFile = util.promisify(fs.readFile);
  */
 class ProjectService {
     /**
-   * Constructor
-   * @param {*} datafile Path to a JSOn file that contains the project data
-   */
+     * Constructor
+     * @param {*} datafile Path to a JSOn file that contains the project data
+     */
     constructor(datafile) {
         this.datafile = datafile;
     }
 
     /**
-   * Returns a list of project name and short name
-   */
+     * Returns a list of project name and short name
+     */
     async getNames() {
         const data = await this.getData();
 
         // We are using map() to transform the array we get into another one
         return data.map(project => {
-            return { name: project.name, topic: project.topic };
+            return {
+                name: project.name,
+                topic: project.topic
+            };
         });
     }
 
     /**
-   * Get all artwork of a given project
-   * @param {*} topic The project short name
-   */
+     * Get all artwork of a given project
+     * @param {*} topic The project short name
+     */
     async getArtworkForProject(topic) {
         const data = await this.getData();
         const project = data.find(elm => {
@@ -44,9 +47,9 @@ class ProjectService {
     }
 
     /**
-   * Get project information provided a topic
-   * @param {*} topic
-   */
+     * Get project information provided a topic
+     * @param {*} topic
+     */
     async getProject(topic) {
         const data = await this.getData();
         const project = data.find(elm => {
@@ -62,8 +65,8 @@ class ProjectService {
     }
 
     /**
-   * Returns a list of project with only the basic information
-   */
+     * Returns a list of project with only the basic information
+     */
     async getListShort() {
         const data = await this.getData();
         return data.map(project => {
@@ -76,8 +79,8 @@ class ProjectService {
     }
 
     /**
-   * Get a list of project
-   */
+     * Get a list of project
+     */
     async getList() {
         const data = await this.getData();
         return data.map(project => {
@@ -94,8 +97,8 @@ class ProjectService {
     }
 
     /**
-   * Fetches project data from the JSON file provided to the constructor
-   */
+     * Fetches project data from the JSON file provided to the constructor
+     */
     async getData() {
         const data = await readFile(this.datafile, "utf8");
         // if (!data) return [];

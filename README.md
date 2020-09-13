@@ -28,25 +28,25 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
+
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+- [Installation](#installation)
+  - [Running the project](#running-the-project)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 ![Project Screenshot](/src/screenshot.png "Placeholder Screenshot")
@@ -59,43 +59,45 @@ Specifically, this work is meant to exemplify the pedagogy of **Project-based Le
 
 In essence, the PBL model consists of these seven characteristics:
 
-* Focuses the student on a big open-ended question, challenge, or problem to research and respond to and/or solve.
-* Brings what students should academically know, understand, and be able to do into the equation.
-* Is inquiry-based.
-* Uses 21st-century skills such as critical thinking, communication, collaboration, and creativity, among others.
-* Builds student choice into the process.
-* Provides opportunities for feedback and revision of the plan and the project.
-* Requires students to present their problems, research process, methods, and results.
+-   Focuses the student on a big open-ended question, challenge, or problem to research and respond to and/or solve.
+-   Brings what students should academically know, understand, and be able to do into the equation.
+-   Is inquiry-based.
+-   Uses 21st-century skills such as critical thinking, communication, collaboration, and creativity, among others.
+-   Builds student choice into the process.
+-   Provides opportunities for feedback and revision of the plan and the project.
+-   Requires students to present their problems, research process, methods, and results.
 
 ### Built With
+
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap 4](https://getbootstrap.com)
-* [node.js](https://nodejs.org/en/ex)
-* [express](https://expressjs.com/)
-* [EJS](https://ejs.co/)
 
-
+-   [Bootstrap 4](https://getbootstrap.com)
+-   [node.js](https://nodejs.org/en/ex)
+-   [express](https://expressjs.com/)
+-   [EJS](https://ejs.co/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 For development, you will only need Node.js and NPM installed in your environement.
 
 ### Prerequisites
-- #### Node installation on Windows
 
-  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
-Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+-   #### Node installation on Windows
 
-- #### Node installation on Ubuntu
+    Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+    Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-  You can install nodejs and npm easily with apt install, just run the following commands.
+-   #### Node installation on Ubuntu
 
-      $ sudo apt install nodejs
-      $ sudo apt install npm
+    You can install nodejs and npm easily with apt install, just run the following commands.
 
-- #### Other Operating Systems
-  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+        $ sudo apt install nodejs
+        $ sudo apt install npm
+
+-   #### Other Operating Systems
+    You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
 If the installation was successful, you should be able to run the following command.
 
@@ -124,13 +126,13 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 Once the server has started up, you can visit it at [localhost:3000/](localhost:3000/), or [127.0.0.1:3000/](127.0.0.1:3000/).
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 See the [open issues](https://github.com/brennanbrown/duck-project/issues) for a list of proposed features (and known issues).
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -141,47 +143,41 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Brennan K. Brown - [@brennankbrown](https://twitter.com/brennanbrown) - brennankbrown@pm.me
 
 Project Link: [https://github.com/brennanbrown/duck-project](https://github.com/brennanbrown/duck-project)
 
-
-
 <!-- ACKNOWLEDGEMENTS -->
+
 ## Acknowledgements
-* [README Template](https://github.com/othneildrew/Best-READ.ME-Template)
-* [Logo Source](https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg)
-* [Prettify](https://www.npmjs.com/package/prettify)
-* [ESLint](https://eslint.org/)
-* [auto0 .gitignore](https://gist.github.com/dan-auth0/2fb996dc8080eaae0900100bf1c3fa26)
-* [Favicon.io](https://favicon.io/)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 
-
-
-
+-   [README Template](https://github.com/othneildrew/Best-READ.ME-Template)
+-   [Logo Source](https://commons.wikimedia.org/wiki/File:Duck_Sotka1.svg)
+-   [Prettify](https://www.npmjs.com/package/prettify)
+-   [ESLint](https://eslint.org/)
+-   [auto0 .gitignore](https://gist.github.com/dan-auth0/2fb996dc8080eaae0900100bf1c3fa26)
+-   [Favicon.io](https://favicon.io/)
+-   [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+-   [Img Shields](https://shields.io)
+-   [Choose an Open Source License](https://choosealicense.com)
+-   [GitHub Pages](https://pages.github.com)
+-   [Animate.css](https://daneden.github.io/animate.css)
+-   [Loaders.css](https://connoratherton.com/loaders)
+-   [Slick Carousel](https://kenwheeler.github.io/slick)
+-   [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+-   [Sticky Kit](http://leafo.net/sticky-kit)
+-   [JVectorMap](http://jvectormap.com)
+-   [Font Awesome](https://fontawesome.com)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
