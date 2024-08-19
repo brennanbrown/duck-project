@@ -62,6 +62,7 @@ header {
 
 nav {
     margin-bottom: 20px;
+    text-align: center; /* Center the content within the nav element */
 }
 
 .center {
@@ -93,11 +94,14 @@ h3,
 h4,
 .site-nav {
     font-family: 'Arial', sans-serif;
+    display: inline-block; /* Makes the span shrink to fit its contents */
 }
 
 .site-title-a {
     font-size: 4rem;
     text-decoration: none;
+    margin: 0 10px; /* Adds space between the links */
+    color: #333; /* Optional: Sets the color of the links */
 }
 
 /* Credit: https://css-tricks.com/examples/hrs/ */
