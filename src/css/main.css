@@ -38,7 +38,6 @@ a:hover {
 /* MAIN CSS */
 
 body {
-    background-image: url("/img/bg.png") !important;
     font-size: 120%;
 }
 
@@ -85,7 +84,7 @@ p,
 ul,
 ol,
 li {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Arial', serif;
 }
 
 h1,
@@ -93,7 +92,7 @@ h2,
 h3,
 h4,
 .site-nav {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .site-title-a {

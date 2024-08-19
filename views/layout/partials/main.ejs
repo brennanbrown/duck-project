@@ -1,72 +1,24 @@
 <main class="main col-sm-12 col-md-9">
+    <h1 id="welcome">Welcome to My Portfolio</h1>
 
-    <h1 id="welcome">Welcome to Brennan's Duck Portfolio!</h1>
+    <p>Thank you for visiting my portfolio! Here, you'll find a showcase of my work in DevOps and cloud infrastructure, where I blend cutting-edge technologies with best practices to deliver robust, scalable solutions.</p>
 
-    <p>Hello! 😊 Thank you for visiting my web portfolio—it means a lot to me. I have built this website from scratch in
-        the past three weeks, using several different technologies and frameworks. My initial commit to the
-        project&#39;s repository was May 19th, and it was presented on June 8th.</p>
+    <h3>Project Overview</h3>
+    <p>This portfolio features a web application originally developed by <a href="https://github.com/brennanbrown/duck-project">Brennan Brown</a>, whose work provided the foundation for this project. The back-end is powered by Node.js with the Express framework, and Embedded JavaScript Templating (EJS) was used for the views.</p>
 
-    <p>For the front-end, I utilized the <a href="https://getbootstrap.com/">Bootstrap</a> toolkit and <a
-            href="https://jquery.com/">jQuery</a> framework in order to have the foundations of a solid, responsive
-        mobile-first design. The rest of the JavaScript is vanilla.</p>
-
-    <p>For the back-end, I am using <a href="https://nodejs.org/en/">node.js</a> with the <a
-            href="https://expressjs.com/">Express</a> framework on top, as well as <a href="https://ejs.co/">Embedded
-            JavaScript Templating</a> as my template engine.</p>
-
-    <p>Additionally, I am using the NPM packages <a href="https://eslint.org/">ESLint</a> and <a
-            href="https://www.npmjs.com/package/prettify">Prettify</a> for code analysis and pattern maintenance, the
-        packages <a href="https://mochajs.org/">Mocha</a> and <a href="https://www.chaijs.com/">Chai</a> for testing,
-        and the packages <a href="https://www.npmjs.com/package/http-errors">http-errors</a> and <a
-            href="https://www.npmjs.com/package/body-parser">body-parser</a> for validation.</p>
-
-    <p>Finally, this website is currently being deployed on <a href="https:/heroku.com">Heroku</a> under a free Dyno
-        plan, so I apologize for any issues regarding speed or connectivity!</p>
-
-    <h3 id="explanation">Why This?</h3>
-
-    <p>I decided to build my own web portfolio as the subject of this project to further my knowledge regarding back-end
-        web technologies, while creating something that will be beneficial to my career. I hope that this demonstrative,
-        visually-appealing website exemplifies my talents and character, as well as opens up opportunities to network
-        with others.</p>
-
-    <p><strong>Limitations:</strong> Through sheer luck, I managed to get my initial objectives set for this website
-        completed on time, and in a presentable fashion. However, compared to the scope (and importance) of other
-        group&#39;s projects, I feel like there is a lot currently lacking. In theory, an informational website such as
-        this could be displayed completely statically, not requiring such a robust back-end. </p>
-
-    <p>If I had extended time, I would have added an actual database component (Eg. MySQL or Redis) instead of simple
-        .JSON files, as well as look into adding an authentication/security page. I would have also liked to have been
-        able to work on more ambitious front-end aspects as well, such as a <a
-            href="https://notes.busterbenson.com/life-in-weeks">Life In Weeks</a> visualization, or add a pre-processor
-        to my styles such as SASS or LESS. </p>
-
-    <h3 id="pages">Current Pages</h3>
-
-    <p>Currently, there are three separate pages on this website to demonstrate different features and functionality
-        within the scope of the described framework:</p>
-
+    <h3>Infrastructure Implementation</h3>
+    <p>To bring this application to life in a production environment, I engineered a cloud infrastructure using AWS and Terraform. The infrastructure includes:</p>
     <ul>
-        <li><a class="font-weight-bold" href="/docs">Docs:</a> is an example of a static webpage and has the
-            project&#39;s README instructions to download and deploy your own version of this open-sourced website.</li>
-        <li><a class="font-weight-bold" href="/project">Projects:</a> is an example of a dynamic webpage that parses
-            through a local .JSON file and pulls data to display in HTML.</li>
-        <li><a class="font-weight-bold" href="/feedback">Feedback:</a> is also an example of a dynamic webpage, however
-            it also allows the client/end-user to add to the local .JSON file, and has proper error-handling and
-            validation of respective input fields.</li>
+        <li>VPC Configuration: A custom Virtual Private Cloud (VPC) was created to isolate and secure the network.</li>
+        <li>Subnet Design: Both public and private subnets were configured to manage traffic effectively.</li>
+        <li>Security Groups: Specific security groups were set up to control inbound and outbound traffic, ensuring that only necessary communication is allowed.</li>
+        <li>EC2 Instances: Amazon EC2 instances were provisioned within the public and private subnets to run the application services securely and efficiently.</li>
+        <li>Routing and Internet Access: An Internet Gateway and a public route table were implemented to allow internet access for the public subnet.</li>
     </ul>
+    <p>This project exemplifies my ability to integrate complex infrastructure with modern application development, ensuring both reliability and scalability.</p>
 
-    <h2 id="more-information">More Information</h2>
+    <h3>Deployment</h3>
+    <p>The application is currently hosted on Heroku under a free Dyno plan, which might affect speed or connectivity. However, the underlying AWS infrastructure I created ensures a solid foundation for future scaling and enhancements.</p>
 
-    <p>This project is a collaboration between <a href="http://ducklabs.com/">Duck Labs</a> and <a
-            href="https://www.evolveu.ca/">EvolveU</a> that aims to teach students the entirety of the spectrum of
-        full-stack web development, starting with the visuals and UX of the front-end, and ending with the database and
-        server communication of the back-end, with the result being a complete and functional website.</p>
-
-    <p>Specifically, this work is meant to exemplify the pedagogy of <strong>Project-based Learning</strong>. PBL is an
-        instructional methodology that encourages students to learn and apply knowledge and skills through an engaging
-        experience. PBL presents opportunities for deeper learning in-context and for the development of important
-        skills tied to career readiness.</p>
-
-
+    <p>Feel free to explore the source code and infrastructure details. Your feedback and suggestions are always welcome!</p>
 </main>
