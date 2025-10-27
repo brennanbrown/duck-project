@@ -210,9 +210,45 @@ h4,
     margin: 1rem 0;
 }
 
+/* Beeminder section panel */
+#beeminder {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+    margin: 1.25rem 0 2rem 0;
+}
+
+/* Docs page panel */
+.docs {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+    margin: 1.25rem auto 2rem auto;
+}
+
+/* Feedback page panels */
+.maincontent {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+    margin: 1rem 0 1.25rem 0;
+}
+
 @media (prefers-color-scheme: dark) {
     .main,
     .menu {
+        background-color: rgba(15, 23, 42, 0.7);
+        border-color: #243244;
+    }
+    #beeminder {
+        background-color: rgba(15, 23, 42, 0.7);
+        border-color: #243244;
+    }
+    .docs,
+    .maincontent {
         background-color: rgba(15, 23, 42, 0.7);
         border-color: #243244;
     }
@@ -253,4 +289,10 @@ h4,
         margin-top: 1.5rem;
         margin-bottom: 1rem;
     }
+}
+
+/* Create horizontal breathing room between main and sidebar on md+ */
+@media (min-width: 768px) {
+    .main { margin-right: 0.75rem; }
+    .menu { margin-left: 0.75rem; }
 }
