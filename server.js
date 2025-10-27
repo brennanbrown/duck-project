@@ -116,7 +116,29 @@ app.use((err, request, response, next) => {
 app.use(csp({
     directives: {
         defaultSrc: ["'self'"],
-        styleSrc: ["'self'", "maxcdn.bootstrapcdn.com", "fonts.googleapis.com"]
+        scriptSrc: [
+            "'self'",
+            "'unsafe-inline'",
+            "code.jquery.com",
+            "cdn.jsdelivr.net",
+            "www.googletagmanager.com",
+            "www.google-analytics.com"
+        ],
+        styleSrc: [
+            "'self'",
+            "'unsafe-inline'",
+            "cdn.jsdelivr.net",
+            "fonts.googleapis.com"
+        ],
+        fontSrc: [
+            "'self'",
+            "fonts.gstatic.com"
+        ],
+        imgSrc: [
+            "'self'",
+            "data:",
+            "https:"
+        ]
     }
 }));
 

@@ -71,8 +71,8 @@ In essence, the PBL model consists of these seven characteristics:
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
--   [Bootstrap 4](https://getbootstrap.com)
--   [node.js](https://nodejs.org/en/ex)
+-   [Bootstrap 5](https://getbootstrap.com)
+-   [node.js](https://nodejs.org/en)
 -   [express](https://expressjs.com/)
 -   [EJS](https://ejs.co/)
 
@@ -102,10 +102,10 @@ For development, you will only need Node.js and NPM installed in your environeme
 If the installation was successful, you should be able to run the following command.
 
     $ node --version
-    v8.11.3
+    v20.x.x
 
     $ npm --version
-    6.1.0
+    10.x.x
 
 If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
@@ -124,6 +124,33 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ npm start
 
 Once the server has started up, you can visit it at [localhost:3000/](localhost:3000/), or [127.0.0.1:3000/](127.0.0.1:3000/).
+
+### Deploying to Heroku
+
+Ensure you are on Node 20 locally and that the lockfile matches dependencies.
+
+1. Install Node 20 (using nvm) and use it:
+
+        nvm install 20 && nvm use 20
+
+2. Regenerate the lockfile to match updated dependencies:
+
+        rm -f package-lock.json
+        npm install
+
+3. Test locally:
+
+        npm start
+
+4. Commit and push changes:
+
+        git add -A
+        git commit -m "chore: upgrade to Node 20, align Bootstrap 5, update CDNs and CSP"
+        git push origin <your-branch>
+
+5. Deploy to Heroku (replace <your-branch> if needed):
+
+        git push heroku <your-branch>:main
 
 <!-- ROADMAP -->
 
