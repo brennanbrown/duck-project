@@ -4,33 +4,63 @@
     box-sizing: border-box;
 }
 
+/* Design tokens */
+:root {
+    --bg: #f8f9fb;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #0d6efd;
+    --primary-700: #0a58ca;
+    --surface: #ffffff;
+    --border: #e5e7eb;
+    --link: #0d6efd;
+    --link-hover: #0a58ca;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0b1220;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --primary: #60a5fa;
+        --primary-700: #3b82f6;
+        --surface: #0f172a;
+        --border: #1f2937;
+        --link: #93c5fd;
+        --link-hover: #bfdbfe;
+    }
+}
+
 .full-width {
-    background-color: #333;
-    color: #fff;
-    padding-bottom: 10px;
+    background-color: var(--surface);
+    color: var(--text);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
 }
 
 .full-width a {
-    color: #fff;
+    color: var(--link);
 }
 
 .full-width a:visited {
-    color: #fff;
+    color: var(--link);
 }
 
 .full-width a:hover {
-    color: #ccc;
+    color: var(--link-hover);
     text-decoration: none;
     background-color: none;
 }
 
 a {
-    color: #002;
-    text-decoration: underline;
+    color: var(--link);
+    text-decoration: none;
+    transition: color 150ms ease;
 }
 
 a:hover {
-    color: #666;
+    color: var(--link-hover);
+    text-decoration: underline;
 }
 
 
@@ -39,7 +69,10 @@ a:hover {
 
 body {
     background-image: url("/img/bg.png") !important;
-    font-size: 120%;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 img {
@@ -52,13 +85,13 @@ img {
 
 header {
     display: inline-block;
-    height: 130%;
+    min-height: 30vh;
     background-image: url("/img/header.jpg") !important;
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 nav {
@@ -86,6 +119,7 @@ ul,
 ol,
 li {
     font-family: 'Vollkorn', serif;
+    color: var(--text);
 }
 
 h1,
@@ -94,6 +128,7 @@ h3,
 h4,
 .site-nav {
     font-family: 'Noto Sans', sans-serif;
+    color: var(--text);
 }
 
 .site-title-a {
@@ -108,8 +143,8 @@ h4,
     /* For IE */
     padding: 0;
     border: none;
-    border-top: medium double #333;
-    color: #333;
+    border-top: medium double var(--border);
+    color: var(--muted);
     text-align: center;
 }
 
@@ -120,5 +155,24 @@ h4,
     top: -0.7em;
     font-size: 1.5em;
     padding: 0 0.25em;
-    background: white;
+    background: var(--surface);
 }
+
+/* Subtle card elevation to complement Bootstrap */
+.card {
+    border-color: var(--border);
+    background-color: var(--surface);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.card .card-subtitle {
+    color: var(--muted);
+}
+
+/* Improve spacing */
+.container {
+    padding-bottom: 2rem;
+}
+
+.mt-4 { margin-top: 1.5rem !important; }
+.mb-4 { margin-bottom: 1.5rem !important; }
