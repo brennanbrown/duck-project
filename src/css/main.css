@@ -175,6 +175,12 @@ h4,
     padding: 0 1.25rem 2rem 1.25rem;
 }
 
+/* Increase padding for full-width containers */
+.container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .mt-4 { margin-top: 1.5rem !important; }
 .mb-4 { margin-bottom: 1.5rem !important; }
 
@@ -194,6 +200,24 @@ h4,
     margin-bottom: 0.75rem;
 }
 
+/* Readability panels over patterned background (all viewports) */
+.main,
+.menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .main,
+    .menu {
+        background-color: rgba(15, 23, 42, 0.7);
+        border-color: #243244;
+    }
+}
+
 /* Desktop refinements */
 @media (min-width: 992px) {
     .container {
@@ -201,13 +225,32 @@ h4,
         padding-right: 2rem;
     }
 
-    .main {
-        padding-right: 1rem;
+    .container-fluid {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
+    .main {
+        padding: 2rem 2.25rem;
+        margin: 1.5rem 0;
+    }
+
+    .mt-4 { margin-top: 1.5rem !important; }
+    .mb-4 { margin-bottom: 1.5rem !important; }
+
+    /* Improve readability of main page content */
     .main > p,
     .main > ul,
     .main > ol {
-        max-width: 72ch;
+        max-width: 75ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main h1,
+    .main h2,
+    .main h3 {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
