@@ -7,7 +7,8 @@
 /* Design tokens */
 :root {
     --bg: #f8f9fb;
-    --text: #1f2937;
+    /* Softer gray for text on light background */
+    --text: #374151;
     --muted: #6b7280;
     --primary: #0d6efd;
     --primary-700: #0a58ca;
@@ -72,7 +73,7 @@ body {
     background-color: var(--bg);
     color: var(--text);
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 img {
@@ -171,8 +172,42 @@ h4,
 
 /* Improve spacing */
 .container {
-    padding-bottom: 2rem;
+    padding: 0 1.25rem 2rem 1.25rem;
 }
 
 .mt-4 { margin-top: 1.5rem !important; }
 .mb-4 { margin-bottom: 1.5rem !important; }
+
+/* Improve readability of main page content */
+.main > p,
+.main > ul,
+.main > ol {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main h1,
+.main h2,
+.main h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Desktop refinements */
+@media (min-width: 992px) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main {
+        padding-right: 1rem;
+    }
+
+    .main > p,
+    .main > ul,
+    .main > ol {
+        max-width: 72ch;
+    }
+}
