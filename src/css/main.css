@@ -216,7 +216,8 @@ h4,
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 1.25rem 1.25rem 1.5rem 1.25rem;
-    margin: 1.25rem 0 2rem 0;
+    margin: 1.25rem auto 2rem auto;
+    max-width: 1140px;
 }
 
 /* Docs page panel */
@@ -291,8 +292,9 @@ h4,
     }
 }
 
-/* Create horizontal breathing room between main and sidebar on md+ */
-@media (min-width: 768px) {
-    .main { margin-right: 0.75rem; }
-    .menu { margin-left: 0.75rem; }
+/* Increase gutter between columns for the homepage row only */
+.container-fluid > .row {
+    --bs-gutter-x: 2rem;
 }
+
+/* Column spacing handled by Bootstrap gutter override above */
