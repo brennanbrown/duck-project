@@ -42,6 +42,12 @@ h1, h2, h3, h4, .site-nav {
 .main {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+/* Sidebar padding */
+.menu {
+    margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
