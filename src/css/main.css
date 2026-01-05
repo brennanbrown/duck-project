@@ -7,7 +7,7 @@
 /* Design tokens */
 :root {
     --bg: #f8f9fb;
-    --text: #374151;
+    --text: #1f2937;
     --muted: #6b7280;
     --primary: #0d6efd;
     --primary-700: #0a58ca;
@@ -236,9 +236,8 @@ h4,
 
 .main,
 .menu {
-    background-color: var(--panel-bg);
-    border: 1px solid var(--panel-border);
-    border-radius: var(--panel-radius);
+    background-color: transparent;
+    border: none;
     padding: 1rem 1.25rem;
     margin: 1rem 0;
 }
