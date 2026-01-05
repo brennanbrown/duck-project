@@ -10,6 +10,7 @@ header {
     background-size: cover;
     text-align: center;
     padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 header h1 a {
@@ -19,6 +20,15 @@ header h1 a {
 
 header .site-nav a {
     color: white !important;
+    transition: color 0.2s ease;
+}
+
+header .site-nav a:hover {
+    color: #f8f9fa !important;
+}
+
+header .site-nav a:active {
+    color: #e9ecef !important;
 }
 
 header .site-nav {
@@ -45,9 +55,11 @@ h1, h2, h3, h4, .site-nav {
     margin-top: 2rem;
 }
 
-/* Sidebar padding */
-.menu {
-    margin-top: 2rem;
+/* Sidebar styling */
+.menu img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 768px) {
