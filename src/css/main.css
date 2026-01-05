@@ -9,11 +9,24 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    padding-bottom: 3rem;
 }
 
 header h1 a {
     color: white !important;
     font-weight: bold;
+}
+
+header .site-nav a {
+    color: white !important;
+}
+
+header .site-nav {
+    color: white !important;
+}
+
+header .quote {
+    color: white !important;
 }
 
 /* Custom fonts if desired */
@@ -42,9 +55,4 @@ h1, h2, h3, h4, .site-nav {
 footer {
     background-color: #f8f9fa;
     text-align: center;
-}
-
-/* Substack embed height */
-.newsletter iframe {
-    height: 350px !important;
 }
