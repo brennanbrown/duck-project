@@ -8,6 +8,12 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+}
+
+header h1 a {
+    color: white !important;
+    font-weight: bold;
 }
 
 /* Custom fonts if desired */
@@ -17,4 +23,28 @@ p, ul, ol, li {
 
 h1, h2, h3, h4, .site-nav {
     font-family: 'Noto Sans', sans-serif;
+}
+
+/* Main content padding */
+.main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Substack embed height */
+.newsletter iframe {
+    height: 350px !important;
 }
