@@ -7,7 +7,6 @@
 /* Design tokens */
 :root {
     --bg: #f8f9fb;
-    /* Softer gray for text on light background */
     --text: #374151;
     --muted: #6b7280;
     --primary: #0d6efd;
@@ -16,6 +15,11 @@
     --border: #e5e7eb;
     --link: #0d6efd;
     --link-hover: #0a58ca;
+    --panel-bg: rgba(255, 255, 255, 0.9);
+    --panel-border: #e5e7eb;
+    --panel-radius: 0.75rem;
+    --beeminder-bg: #ffffff;
+    --beeminder-border: #e5e7eb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,13 +33,17 @@
         --border: #1f2937;
         --link: #93c5fd;
         --link-hover: #bfdbfe;
+        --panel-bg: rgba(15, 23, 42, 0.7);
+        --panel-border: #243244;
+        --beeminder-bg: #1e293b;
+        --beeminder-border: #334155;
     }
 }
 
 .full-width {
     background-color: var(--surface);
     color: var(--text);
-    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--border);
 }
 
@@ -69,10 +77,10 @@ a:hover {
 /* MAIN CSS */
 
 body {
-    background-image: url("/img/bg.png") !important;
+    background-image: url("/img/bg.png");
     background-color: var(--bg);
     color: var(--text);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.7;
 }
 
@@ -87,16 +95,24 @@ img {
 header {
     display: inline-block;
     min-height: 30vh;
-    background-image: url("/img/header.jpg") !important;
+    background-image: url("/img/header.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     font-size: 110%;
 }
 
+/* Disable background-attachment: fixed on mobile for performance */
+@supports (background-attachment: fixed) {
+    @media (min-width: 768px) {
+        header {
+            background-attachment: fixed;
+        }
+    }
+}
+
 nav {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .center {
@@ -112,7 +128,7 @@ nav {
 }
 
 .newsletter {
-    margin-bottom: -25px;
+    margin-bottom: -1.5rem;
 }
 
 p,
@@ -163,7 +179,7 @@ h4,
 .card {
     border-color: var(--border);
     background-color: var(--surface);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.06);
+    box-shadow: 0 0.0625rem 0.125rem rgba(0,0,0,0.04), 0 0.25rem 1rem rgba(0,0,0,0.06);
 }
 
 .card .card-subtitle {
@@ -175,10 +191,19 @@ h4,
     padding: 0 1.25rem 2rem 1.25rem;
 }
 
-/* Increase padding for full-width containers */
 .container-fluid {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+/* Add more breathing room between sidebar and main content */
+@media (min-width: 768px) {
+    .main {
+        padding-right: 2rem;
+    }
+    .menu {
+        padding-left: 1rem;
+    }
 }
 
 .mt-4 { margin-top: 1.5rem !important; }
@@ -200,60 +225,64 @@ h4,
     margin-bottom: 0.75rem;
 }
 
-/* Readability panels over patterned background (all viewports) */
+/* Readability panels over patterned background */
+.content-panel {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--panel-radius);
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+}
+
 .main,
 .menu {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid var(--border);
-    border-radius: 12px;
+    background-color: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--panel-radius);
     padding: 1rem 1.25rem;
     margin: 1rem 0;
 }
 
 /* Beeminder section panel */
 #beeminder {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+    background-color: var(--beeminder-bg);
+    border: 1px solid var(--beeminder-border);
+    border-radius: var(--panel-radius);
+    padding: 1.25rem;
     margin: 1.25rem auto 2rem auto;
     max-width: 1140px;
 }
 
+/* Beeminder card styling */
+#beeminder .card {
+    background-color: var(--surface);
+    border-color: var(--border);
+    margin-bottom: 1.5rem;
+}
+
+#beeminder iframe {
+    background-color: var(--surface) !important;
+    border-radius: 0.375rem;
+}
+
 /* Docs page panel */
 .docs {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+    background-color: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--panel-radius);
+    padding: 1.25rem;
     margin: 1.25rem auto 2rem auto;
 }
 
 /* Feedback page panels */
 .maincontent {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+    background-color: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--panel-radius);
+    padding: 1.25rem;
     margin: 1rem 0 1.25rem 0;
 }
 
-@media (prefers-color-scheme: dark) {
-    .main,
-    .menu {
-        background-color: rgba(15, 23, 42, 0.7);
-        border-color: #243244;
-    }
-    #beeminder {
-        background-color: rgba(15, 23, 42, 0.7);
-        border-color: #243244;
-    }
-    .docs,
-    .maincontent {
-        background-color: rgba(15, 23, 42, 0.7);
-        border-color: #243244;
-    }
-}
 
 /* Desktop refinements */
 @media (min-width: 992px) {
@@ -268,8 +297,12 @@ h4,
     }
 
     .main {
-        padding: 2rem 2.25rem;
+        padding: 2rem 2.25rem 2rem 2rem;
         margin: 1.5rem 0;
+    }
+
+    .menu {
+        padding-left: 2rem;
     }
 
     .mt-4 { margin-top: 1.5rem !important; }
