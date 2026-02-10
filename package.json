@@ -1,51 +1,51 @@
 {
-    "name": "duck-project",
-    "version": "1.0.0",
-    "description": "This project is a collaboration between Duck Labs and EvolveU that aims to teach students the entirety of the spectrum of full-stack web development.",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js",
-        "dev": "nodemon --ignore feedback.json server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/brennanbrown/duck-project.git"
-    },
-    "keywords": [
-        "nodejs",
-        "express",
-        "bootstrap"
-    ],
-    "author": "Brennan K. Brown",
-    "license": "MIT",
-    "devDependencies": {
-        "eslint": "^7.32.0",
-        "eslint-config-airbnb-base": "^14.2.1",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-import": "^2.24.2",
-        "eslint-plugin-prettier": "^3.4.1",
-        "jest": "^29.7.0",
-        "nodemon": "^2.0.20",
-        "prettier": "^2.4.1",
-        "chai": "^4.2.0",
-        "mocha": "^10.1.0"
-    },
-    "dependencies": {
-        "body-parser": "^1.20.4",
-        "bootstrap": "^5.0.0",
-        "cookie-session": "^2.1.1",
-        "ejs": "^3.1.10",
-        "express": "^4.22.1",
-        "express-validator": "^6.5.0",
-        "helmet-csp": "^2.10.0",
-        "http-errors": "^1.7.3"
-    },
-    "bugs": {
-        "url": "https://github.com/brennanbrown/duck-project/issues"
-    },
-    "engines": {
-        "node": "24.x"
-    },
-    "homepage": "https://github.com/brennanbrown/duck-project#readme"
+  "name": "duck-project",
+  "version": "1.0.0",
+  "description": "This project is a collaboration between Duck Labs and EvolveU that aims to teach students the entirety of the spectrum of full-stack web development.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon --ignore feedback.json server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brennanbrown/duck-project.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "bootstrap"
+  ],
+  "author": "Brennan K. Brown",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^3.4.1",
+    "jest": "^29.7.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.4.1",
+    "chai": "^4.2.0",
+    "mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.4",
+    "bootstrap": "^5.0.0",
+    "cookie-session": "^2.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.22.1",
+    "express-validator": "^6.5.0",
+    "helmet-csp": "^2.10.0",
+    "http-errors": "^1.7.3"
+  },
+  "bugs": {
+    "url": "https://github.com/brennanbrown/duck-project/issues"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "homepage": "https://github.com/brennanbrown/duck-project#readme"
 }
